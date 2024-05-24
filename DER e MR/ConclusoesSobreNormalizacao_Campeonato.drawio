@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" modified="2024-05-24T23:35:25.159Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="3TftEn_jO1aHEYeAFM7N" version="24.4.8" type="device">
+  <diagram name="Página-1" id="oEa7EVMn7R-xWfV6C_sM">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uj2Pa5tgF5p8mhPGZhqv-1" value="Primeira forma normal (atributos multivalorados)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uj2Pa5tgF5p8mhPGZhqv-2" value="&lt;p style=&quot;line-height: 120%; font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;O diagrama não possui atributos multivalorados, portanto não precisa de normalização&lt;/font&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="160" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uj2Pa5tgF5p8mhPGZhqv-3" value="FORMAS NORMAIS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uj2Pa5tgF5p8mhPGZhqv-4" value="SITUAÇÃO" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="120" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uj2Pa5tgF5p8mhPGZhqv-5" value="&lt;div&gt;Segunda forma normal (atributos que não participam de uma das&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;chave são depen-dentes dela)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="210" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uj2Pa5tgF5p8mhPGZhqv-6" value="&lt;p style=&quot;line-height: 120%; font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;O diagrama não possui atributos que dependem de parte das chaves, portanto não precisa de normalização&lt;/font&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="210" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uj2Pa5tgF5p8mhPGZhqv-7" value="&lt;div&gt;Terceira forma normal (atributos que não participam de uma das&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;chave são depen-dentes de outros que não são chave)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="260" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uj2Pa5tgF5p8mhPGZhqv-8" value="&lt;p style=&quot;line-height: 120%; font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;O diagrama não possui atributos que dependem de outros atributos não-chaves, portanto não precisa de normalização&lt;/font&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="260" width="240" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
