@@ -13,6 +13,7 @@ CREATE TABLE Time_Campeonato
 	Gols_Feitos INT DEFAULT 0
 
 	CONSTRAINT pk_Time PRIMARY KEY (Id),
+	CONSTRAINT Unique_Time_Nome UNIQUE (Nome)
 );
 
 CREATE TABLE Partida  
