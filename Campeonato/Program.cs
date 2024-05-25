@@ -10,14 +10,16 @@ namespace Campeonato
         static int timeMaximo = 0, sairAdicionarTime = 1;
         static void EntrarPrimeiraVezPrograma()
         {
-            Console.WriteLine("------------------------------");
-            Console.WriteLine(">>> CAMPEONATO DE FUTEBOL <<<");
-            Console.WriteLine("------------------------------\n");
-            Console.WriteLine("Adicione os times do campeonato para prosseguir:\n" +
-                "(No mínimo 3, no máximo 5)");
+
             while (timeMaximo < 5 && sairAdicionarTime != 0)
             {
-                bool sairDoIf = false;
+                bool sairDoIf = false, dataValida = false;
+                
+                Console.WriteLine("------------------------------");
+                Console.WriteLine(">>> CAMPEONATO DE FUTEBOL <<<");
+                Console.WriteLine("------------------------------\n");
+                Console.WriteLine("Adicione os times do campeonato para prosseguir:\n" +
+                    "(No mínimo 3, no máximo 5)");
 
                 Console.WriteLine($"Adicione o {timeMaximo + 1}º time:");
 
@@ -27,14 +29,39 @@ namespace Campeonato
                 Console.WriteLine("Apelido: ");
                 string apelidoTime = Console.ReadLine();
 
-                Console.WriteLine("Data de criação: ");
-                DateOnly dt_criacao = DateOnly.Parse(Console.ReadLine());
+                DateOnly dt_criacao;
+
+                do
+                {
+                    try
+                    {
+                        Console.WriteLine("Data de criação: ");
+
+                        string data_Criacao_String = Console.ReadLine();
+                        dt_criacao = DateOnly.Parse(data_Criacao_String);
+
+                        DateTime dt_Hoje_DateTime = DateTime.Now;
+                        DateOnly dt_Hoje = new DateOnly(dt_Hoje_DateTime.Year, dt_Hoje_DateTime.Month, dt_Hoje_DateTime.Day);
+
+                        if (dt_criacao < dt_Hoje)
+                            dataValida = true;
+                        else
+                            Console.WriteLine("Digite uma data válida!");    
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Digite uma data válida!");
+                    }
+                }
+                while (dataValida != true);                    
 
                 mb.AdicionarTimes(new Time(nomeTime, apelidoTime, dt_criacao));
                 timeMaximo++;
 
                 Console.WriteLine("Time adicionado com sucesso!");
                 Console.ReadKey();
+                Console.Clear();
+
                 if (timeMaximo > 2)
                 {
                     while (sairDoIf == false)
@@ -71,7 +98,7 @@ namespace Campeonato
                     "3. Mostrar o time que mais fez gols no campeonato\n" +
                     "4. Mostrar o time que tomou mais gols no campeonato\n" +
                     "5. Mostrar o jogo com mais gols\n" +
-                    "6. Mostrar o maior número de gols que cada time fez em um único jogo\n" + 
+                    "6. Mostrar o maior número de gols que cada time fez em um único jogo\n" +
                     "7. Mostrar a tabela de todos os jogos\n" +
                     "8. Sair\n" +
                     "------------------------------");
